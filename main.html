@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>網頁工具集</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .tools-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .tool-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .tool-card h2 {
+            color: #2196F3;
+            margin-top: 0;
+        }
+
+        .tool-card p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .tool-card a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2196F3;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .tool-card a:hover {
+            background-color: #1976D2;
+        }
+    </style>
+</head>
+<body>
+    <h1>網頁工具集</h1>
+    
+    <div class="tools-container">
+        <div class="tool-card">
+            <h2>計算機</h2>
+            <p>一個功能完整的網頁計算機，支援基本運算和歷史記錄功能。</p>
+            <a href="Calculator.html">開啟計算機</a>
+        </div>
+
+        <div class="tool-card">
+            <h2>網頁小畫家</h2>
+            <p>簡單好用的繪圖工具，可以自由創作和儲存您的作品。</p>
+            <a href="Painter.html">開啟小畫家</a>
+        </div>
+
+        <div class="tool-card">
+            <h2>電子相框</h2>
+            <p>自動播放的電子相框，可以展示您喜愛的照片集。</p>
+            <a href="PhotoFrame.html">開啟相框</a>
+        </div>
+
+        <div class="tool-card">
+            <h2>QR Code 生成器</h2>
+            <p>快速產生自訂 QR Code，方便分享網址和資訊。</p>
+            <a href="QR_Code.html">開啟生成器</a>
+        </div>
+    </div>
+</body>
+</html> 
